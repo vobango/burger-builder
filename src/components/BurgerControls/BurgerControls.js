@@ -9,13 +9,14 @@ const burgerControls = (props) => {
         {label: 'Cheese', type: 'cheese'},
         {label: 'Meat', type: 'meat'}
     ]
-    
+
     return (
         <div className={classes.BurgerControls}>
             <div className={classes.OrderInfo}>
                 <button
                     className={classes.OrderButton}
-                    disabled={!props.purchasable}>ORDER NOW</button>
+                    disabled={!props.purchasable}
+                    onClick={props.ordered}>ORDER NOW</button>
                 <p>Price: <strong>${props.currentPrice.toFixed(2)}</strong></p>
             </div>
             {controls.map(control => {
