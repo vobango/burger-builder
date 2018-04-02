@@ -23,4 +23,6 @@
 .Logo {
     height: 11%;
     background-color: seashell;
+    margin-bottom: 20px;
+    text-align: center;
 }

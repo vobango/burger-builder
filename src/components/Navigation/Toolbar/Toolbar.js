@@ -6,9 +6,13 @@ import classes from './Toolbar.css'
 const toolbar = (props) => {
     return (
     <header className={classes.Toolbar}>
-        <div>Menu</div>
+        <div onClick={props.clicked} className={classes.DrawerToggle}>
+            <div/>
+            <div/>
+            <div/>
+        </div>
         <Logo />
-        <nav>
+        <nav className={classes.DesktopOnly}>
             <NavigationItems />
         </nav>
     </header>
