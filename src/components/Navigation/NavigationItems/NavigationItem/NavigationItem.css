@@ -7,20 +7,21 @@
 }
 
 .NavigationItem a {
-    color: palevioletred;
+    color: hsl(250, 70%, 65%);
     text-decoration: none;
     height: 100%;
     padding: 16px 10px;
     border-bottom: 4px solid transparent;
     box-sizing: border-box;
     display: block;
+    transition: 0.1s;
 }
 
 .NavigationItem a:hover,
 .NavigationItem a:active,
 .NavigationItem a.active {
-    background-color: skyblue;
-    border-bottom: 4px solid violet;
+    color: hsl(250, 70%, 50%);
+    border-bottom: 4px solid hsl(250, 65%, 70%);
 }
 
 @media (max-width: 499px) {
@@ -29,7 +30,7 @@
         height: auto;
     }
     .NavigationItem a {
-        color: teal;
+        color: hsl(250, 70%, 75%);
         width: 100%;
         padding: 10px;
         border-left: 4px solid transparent;
@@ -38,8 +39,7 @@
     .NavigationItem a:hover,
     .NavigationItem a:active,
     .NavigationItem a.active {
-        background-color: white;
         border-bottom: none;
-        border-left: 4px solid violet;
+        border-left: 4px solid hsl(250, 65%, 70%);;
     }
 }

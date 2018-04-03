@@ -4,7 +4,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: hsl(50, 70%, 80%);
+    background-color: hsl(190, 50%, 80%);
+    box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.18);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,6 +40,7 @@
     width: 90%;
     height: 3px;
     background-color: white;
+    box-shadow: 0 1px 2px hsl(0, 0%, 70%);
 }
 
 @media (min-width: 500px) {

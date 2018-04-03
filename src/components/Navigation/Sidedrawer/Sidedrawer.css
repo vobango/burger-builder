@@ -6,7 +6,8 @@
     left: 0;
     top: 0;
     z-index: 300;
-    background-color: seashell;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 5px 0 20px hsla(0, 0%, 0%, 0.4);
     padding: 32px 16px;
     box-sizing: border-box;
     transition: transform 0.3s ease-out;
@@ -17,12 +18,11 @@
 }
 
 .Close {
-    transform: translateX(-100%);
+    transform: translateX(-105%);
 }
 
 .Logo {
     height: 11%;
-    background-color: seashell;
     margin-bottom: 20px;
     text-align: center;
 }
